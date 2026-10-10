@@ -1,0 +1,6 @@
+# MOCKUP: blocks all crawlers. Replace before launch with:
+# User-agent: *
+# Allow: /
+# Sitemap: https://rightstepsacademy.com/sitemap.xml
+User-agent: *
+Disallow: /
