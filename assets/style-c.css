@@ -1,0 +1,63 @@
+/* Option C: layered on style.css. Rules adapted from elayadesign landing-page-design skill:
+   one typeface (Manrope), Tailwind type scale, fixed spacing tokens, flat backgrounds,
+   floating blurred nav, 680px hero text, weighted motion curve, tagline reveal. */
+.option-c{--font:"Manrope",ui-sans-serif,system-ui,sans-serif;--ease:cubic-bezier(.22,1,.36,1);--bg:#FFFDF8;
+  font-family:var(--font);font-size:16px;line-height:24px}
+.option-c h1,.option-c h2,.option-c h3,.option-c b,.option-c strong{font-weight:700}
+.option-c em,.option-c i{font-style:normal}
+.option-c h1{font-size:36px;line-height:40px;letter-spacing:-.02em;max-width:680px;
+  background:linear-gradient(90deg,#012A4F,#3E6D96);-webkit-background-clip:text;background-clip:text;color:transparent}
+.option-c h2{font-size:30px;line-height:36px;letter-spacing:-.01em}
+.option-c h3{font-size:20px;line-height:28px}
+@media (min-width:900px){.option-c h1{font-size:60px;line-height:1}.option-c h2{font-size:36px;line-height:40px}}
+.option-c .lead{font-size:18px;line-height:28px;max-width:680px;color:var(--muted)}
+.option-c .eyebrow{font-size:14px;line-height:20px;font-weight:600}
+/* flat backgrounds, no gradients */
+.option-c .hero,.option-c .alt-bg,.option-c .sky-bg,.option-c .trust{background:#F4F6FA;background-image:none}
+.option-c .hero{background:var(--bg)}
+.option-c section{padding:64px 0}
+@media (min-width:900px){.option-c section{padding:96px 0}}
+.option-c .section-head{margin-bottom:48px;max-width:680px}
+.option-c .grid{gap:24px}
+/* cards: full border, Tailwind radii, nested radius = outer - gap */
+.option-c .card{border:1px solid #E3E8EF;border-radius:24px;padding:12px;box-shadow:none;transition:transform .5s var(--ease)}
+.option-c .card:hover{transform:translateY(-4px)}
+.option-c .card .card-img{border-radius:12px;margin:0 0 16px}
+.option-c .card h3,.option-c .card p,.option-c .card .age,.option-c .card .more{margin-left:12px;margin-right:12px}
+.option-c .price-card{padding:24px}
+.option-c .photo{border-radius:24px;box-shadow:none}
+.option-c .fact{border:1px solid #E3E8EF;border-radius:16px;box-shadow:none;padding:16px}
+.option-c .fact b{font-size:18px;line-height:28px}
+.option-c .fact span{font-size:14px;line-height:20px}
+.option-c .quote{border:1px solid #E3E8EF;border-left-width:1px;border-radius:16px;padding:24px;background:#fff}
+.option-c .faq-item{border:1px solid #E3E8EF;border-radius:16px;padding:24px;background:#fff}
+.option-c .cta-band{background:#012A4F;background-image:none;border-radius:24px;padding:48px 32px}
+/* buttons: 8px/12px padding scaled for touch via min-height, semibold 16px, no 3D shadow */
+.option-c .btn{font-weight:600;font-size:16px;line-height:24px;padding:12px 24px;border-radius:9999px;box-shadow:none;
+  transition:transform .3s var(--ease),opacity .3s var(--ease)}
+.option-c .btn.small{font-size:14px;line-height:20px;padding:8px 16px}
+.option-c .btn:hover{transform:translateY(-2px);filter:none}
+.option-c .btn:active{transform:scale(.98)}
+.option-c a:focus-visible,.option-c button:focus-visible{outline:2px solid #F7931E;outline-offset:2px}
+.option-c .hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.option-c .hero-proof{font-size:14px;line-height:20px;font-weight:600;color:var(--muted)}
+/* floating, translucent, blurred header */
+.option-c .site-header{background:transparent;border:0;top:12px;padding:0 4%}
+.option-c .site-header .wrap{background:rgba(255,255,255,.82);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  border:1px solid rgba(1,42,79,.08);border-radius:9999px;padding:8px 8px 8px 24px;margin-top:12px;width:min(1160px,100%)}
+.option-c .brand img{height:40px}
+.option-c .main-nav a{font-weight:600;font-size:14px;line-height:20px;border-radius:9999px}
+.option-c .main-nav{border-radius:24px}
+.option-c .nav-toggle{border-radius:9999px;font-weight:600}
+@media (max-width:979px){.option-c .main-nav{top:calc(100% + 8px);background:rgba(255,255,255,.96);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px)}}
+/* tagline reveal (word by word) */
+.option-c .tagline-c{background:var(--bg)}
+.option-c .reveal-words{font-size:36px;line-height:40px;font-weight:700;letter-spacing:-.02em;color:#012A4F;max-width:900px;margin:0 auto;text-align:center}
+@media (min-width:900px){.option-c .reveal-words{font-size:48px;line-height:1.1}}
+.option-c .reveal-words .w{opacity:.3;transition:opacity .5s var(--ease)}
+.option-c .reveal-words .w.on{opacity:1}
+/* scroll reveal for sections */
+.option-c .rv{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.option-c .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.option-c .rv{transform:none}.option-c .card:hover,.option-c .btn:hover{transform:none}}
+.option-c .mock-banner a[aria-current]{font-weight:700;text-decoration:none}
