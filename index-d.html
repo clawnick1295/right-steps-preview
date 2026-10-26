@@ -155,73 +155,79 @@
 <body class="option-d">
 <a class="skip" href="#main">Skip to content</a>
 <div class="mock-banner" role="note">Design mockup for owner review — not a live website. Items marked <span class="otc">[OWNER TO CONFIRM]</span> need the owner's sign-off before launch. <span class="switch">Home design: <a href="index.html">View option A</a> / <a href="index-b.html">option B</a> / <a href="index-c.html">option C</a> / <a href="index-d.html" aria-current="page">option D</a></span></div>
-<div class="glow" aria-hidden="true"></div>
-<svg class="stars" aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none"><g fill="#FFD27A"><circle cx="8" cy="12" r=".35"/><circle cx="22" cy="40" r=".25"/><circle cx="37" cy="8" r=".3"/><circle cx="55" cy="28" r=".2"/><circle cx="71" cy="14" r=".35"/><circle cx="88" cy="35" r=".25"/><circle cx="93" cy="7" r=".3"/><circle cx="14" cy="70" r=".25"/><circle cx="46" cy="62" r=".2"/><circle cx="79" cy="66" r=".3"/><circle cx="62" cy="88" r=".25"/><circle cx="30" cy="92" r=".3"/></g></svg>
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="cursor" aria-hidden="true"><span></span></div>
+<div class="progress" aria-hidden="true"></div>
 <header class="site-header"><div class="wrap">
 <a class="brand" href="index-d.html"><img src="assets/brand/rsa-logo-horizontal.svg" alt="Right Steps Academy home" width="186" height="48"></a>
 <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
 <nav id="main-nav" class="main-nav" aria-label="Main"><ul><li><a href="index-d.html" aria-current="page">Home</a></li><li><a href="programs.html">Programs</a></li><li><a href="tuition.html">Tuition</a></li><li><a href="vpk.html">VPK</a></li><li><a href="about.html">About &amp; Teachers</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
-<a class="btn small" href="enroll.html">Schedule a Tour</a>
+<a class="btn small magnetic" href="enroll.html"><span>Schedule a Tour</span></a>
 </div></header>
 <main id="main">
 <section class="hero"><div class="wrap hero-grid">
 <div class="hero-copy">
 <span class="eyebrow"><span class="dot"></span>Now enrolling · ages 12 months – VPK</span>
-<h1 class="kinetic"><span>Little</span> <span>steps.</span> <span class="lum">Bright</span> <span class="lum">futures.</span></h1>
+<h1 class="kinetic" aria-label="Little steps. Bright futures."><span class="word " aria-hidden="true"><span class="ch">L</span><span class="ch">i</span><span class="ch">t</span><span class="ch">t</span><span class="ch">l</span><span class="ch">e</span></span> <span class="word " aria-hidden="true"><span class="ch">s</span><span class="ch">t</span><span class="ch">e</span><span class="ch">p</span><span class="ch">s</span><span class="ch">.</span></span><br><span class="word lum" aria-hidden="true"><span class="ch">B</span><span class="ch">r</span><span class="ch">i</span><span class="ch">g</span><span class="ch">h</span><span class="ch">t</span></span> <span class="word lum" aria-hidden="true"><span class="ch">f</span><span class="ch">u</span><span class="ch">t</span><span class="ch">u</span><span class="ch">r</span><span class="ch">e</span><span class="ch">s</span><span class="ch">.</span></span></h1>
 <p class="lead"><strong>Right Steps Academy</strong> is a licensed, Gold Seal Quality Care and APPLE-accredited preschool &amp; daycare at 12800 Kenwood Ln, Fort Myers, FL 33907. Ages 12 months through VPK, Monday–Friday 7:00am–6:00pm, with breakfast, lunch and afternoon snack included.</p>
-<div class="ctas"><a class="btn" href="enroll.html">Schedule a tour</a><a class="btn ghost" href="tel:+12393181102">Call 239-318-1102</a></div>
+<div class="ctas"><a class="btn magnetic" href="enroll.html"><span>Schedule a tour</span></a><a class="btn ghost magnetic" href="tel:+12393181102"><span>Call 239-318-1102</span></a></div>
 </div>
-<div class="hero-visual">
-<div class="owl-eyes" aria-hidden="true"><span class="eye"><i></i></span><span class="eye"><i></i></span></div>
-<div class="orbit" aria-hidden="true"></div>
-<img class="p-main" data-speed="-0.06" src="assets/photos/home-hero-uniforms-fort-myers.webp" alt="Preschoolers in Right Steps Academy owl uniform shirts playing outdoors in Fort Myers, FL" width="675" height="540" fetchpriority="high" decoding="async">
-<img class="p-float" data-speed="0.08" src="assets/photos/vpk-circle-time.webp" alt="VPK circle time at Right Steps Academy" width="400" height="300" loading="lazy" decoding="async">
+<div class="hero-stage">
+<div class="portal"><img src="assets/photos/home-hero-uniforms-fort-myers.webp" alt="Preschoolers in Right Steps Academy owl uniform shirts playing outdoors in Fort Myers, FL" width="675" height="540" fetchpriority="high" decoding="async"></div>
+<button class="owl" type="button" aria-label="Say hi to our owl">
+<svg viewBox="0 0 200 200" aria-hidden="true"><defs><radialGradient id="ob" cx="50%" cy="40%"><stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#d4700a"/></radialGradient></defs>
+<path class="ear" d="M48 62 L40 22 L80 48 Z" fill="#b85f08"/><path class="ear r" d="M152 62 L160 22 L120 48 Z" fill="#b85f08"/>
+<ellipse cx="100" cy="115" rx="72" ry="78" fill="url(#ob)"/><ellipse cx="100" cy="140" rx="42" ry="44" fill="#fde9c8"/>
+<g class="wing l"><ellipse cx="34" cy="128" rx="16" ry="34" fill="#b85f08"/></g><g class="wing r"><ellipse cx="166" cy="128" rx="16" ry="34" fill="#b85f08"/></g>
+<g class="eyes"><circle cx="70" cy="88" r="27" fill="#fffbea"/><circle cx="130" cy="88" r="27" fill="#fffbea"/>
+<g class="pupils"><circle cx="70" cy="88" r="12" fill="#06142b"/><circle cx="130" cy="88" r="12" fill="#06142b"/><circle cx="74" cy="83" r="4" fill="#fff"/><circle cx="134" cy="83" r="4" fill="#fff"/></g>
+<rect class="lid" x="40" y="58" width="120" height="0" fill="#d4700a"/></g>
+<path d="M92 108 L100 124 L108 108 Z" fill="#F7931E" stroke="#8A4B00" stroke-width="2"/>
+<g class="cheeks" opacity=".5"><circle cx="52" cy="116" r="7" fill="#ff8c8c"/><circle cx="148" cy="116" r="7" fill="#ff8c8c"/></g></svg>
+<span class="bubble" aria-live="polite">Hoo! Hi there!</span></button>
 </div>
+</div>
+<a class="scroll-hint" href="#facts">Scroll to explore <span aria-hidden="true">↓</span></a>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track"><span>Gold Seal Quality Care ✦ APPLE accredited ✦ Ages 12 months – VPK ✦ Breakfast, lunch &amp; snack included ✦ State-funded VPK ✦ Fort Myers, FL ✦ </span><span>Gold Seal Quality Care ✦ APPLE accredited ✦ Ages 12 months – VPK ✦ Breakfast, lunch &amp; snack included ✦ State-funded VPK ✦ Fort Myers, FL ✦ </span></div></div>
+
+<section class="facts" id="facts"><div class="wrap facts-grid">
+<div class="glass reveal"><b><span class="count" data-to="7">7</span>am–<span class="count" data-to="6">6</span>pm</b><span>Doors &amp; classes, Mon–Fri</span></div>
+<div class="glass reveal"><b>$<span class="count" data-to="1100" data-comma="1">1,100</span></b><span>per 4 weeks, ages 1–3</span></div>
+<div class="glass reveal"><b>$<span class="count" data-to="800">800</span></b><span>VPK wraparound per 4 weeks</span></div>
+<div class="glass reveal"><b><span class="count" data-to="3">3</span> meals</b><span>Breakfast, lunch &amp; snack included</span></div>
 </div></section>
 
-<section class="facts reveal" aria-label="Quick facts"><div class="wrap facts-grid">
-<div class="glass"><b>7am–6pm</b><span>Doors &amp; classes, Mon–Fri</span></div>
-<div class="glass"><b>$1,100</b><span>per 4 weeks, ages 1–3</span></div>
-<div class="glass"><b>$800</b><span>VPK wraparound per 4 weeks</span></div>
-<div class="glass"><b>3 meals</b><span>Breakfast, lunch &amp; snack included</span></div>
+<section class="showcase" id="showcase" aria-labelledby="sc-h">
+<div class="sc-sticky">
+<div class="wrap sc-head"><h2 id="sc-h" class="reveal">Step inside <span class="lum">Right Steps</span></h2><p class="reveal">Real rooms, real kids, real smiles. <span class="hint">Scroll or drag to explore →</span></p></div>
+<div class="sc-rail" tabindex="0" aria-label="Photo tour of the school, scroll horizontally"><div class="sc-track"><figure class="shot" tabindex="0"><div class="shot-img"><img src="assets/photos/toddlers-classroom.webp" alt="Toddler room at Right Steps Academy" loading="lazy" decoding="async" width="800" height="600" draggable="false"></div><figcaption><span class="num">01</span><b>Toddler room</b><span>Soft, bright spaces for first explorers.</span></figcaption></figure><figure class="shot" tabindex="0"><div class="shot-img"><img src="assets/photos/twos-classroom.webp" alt="Two's classroom at Right Steps Academy" loading="lazy" decoding="async" width="800" height="600" draggable="false"></div><figcaption><span class="num">02</span><b>Two's classroom</b><span>Centers for building, pretend and books.</span></figcaption></figure><figure class="shot" tabindex="0"><div class="shot-img"><img src="assets/photos/threes-classroom.webp" alt="Three's classroom at Right Steps Academy" loading="lazy" decoding="async" width="800" height="600" draggable="false"></div><figcaption><span class="num">03</span><b>Three's classroom</b><span>Where curiosity turns into early learning.</span></figcaption></figure><figure class="shot" tabindex="0"><div class="shot-img"><img src="assets/photos/vpk-circle-time.webp" alt="Circle time at Right Steps Academy" loading="lazy" decoding="async" width="800" height="600" draggable="false"></div><figcaption><span class="num">04</span><b>Circle time</b><span>Stories, songs and big ideas together.</span></figcaption></figure><figure class="shot" tabindex="0"><div class="shot-img"><img src="assets/photos/playground-climber.webp" alt="Playground at Right Steps Academy" loading="lazy" decoding="async" width="800" height="600" draggable="false"></div><figcaption><span class="num">05</span><b>Playground</b><span>Climb, slide and run every day.</span></figcaption></figure><figure class="shot" tabindex="0"><div class="shot-img"><img src="assets/photos/threes-outdoor-play.webp" alt="Outdoor play at Right Steps Academy" loading="lazy" decoding="async" width="800" height="600" draggable="false"></div><figcaption><span class="num">06</span><b>Outdoor play</b><span>Fresh air and friendship.</span></figcaption></figure><figure class="shot" tabindex="0"><div class="shot-img"><img src="assets/photos/front-lobby.webp" alt="Front lobby at Right Steps Academy" loading="lazy" decoding="async" width="800" height="600" draggable="false"></div><figcaption><span class="num">07</span><b>Front lobby</b><span>A warm welcome at every drop-off.</span></figcaption></figure><figure class="shot" tabindex="0"><div class="shot-img"><img src="assets/photos/building-exterior-kenwood-ln.webp" alt="Our building at Right Steps Academy" loading="lazy" decoding="async" width="800" height="600" draggable="false"></div><figcaption><span class="num">08</span><b>Our building</b><span>12800 Kenwood Ln, Fort Myers.</span></figcaption></figure></div></div>
+<div class="wrap sc-bar" aria-hidden="true"><span></span></div>
 </div></section>
 
 <section class="programs"><div class="wrap">
 <h2 class="reveal">Programs that grow<br><span class="lum">with your child</span></h2>
 <div class="bento">
-<a class="tile t-big reveal" href="programs.html#toddlers"><img src="assets/photos/toddlers-sensory-table.webp" alt="Toddlers exploring a sensory table" loading="lazy" width="600" height="450"><div><small>12–24 months</small><h3>Toddlers</h3><p>Sensory play, first words, gentle routines.</p></div></a>
-<a class="tile reveal" href="programs.html#twos"><img src="assets/photos/twos-teacher-small-group.webp" alt="Teacher with a small group of two-year-olds" loading="lazy" width="600" height="450"><div><small>24–36 months</small><h3>Two's</h3></div></a>
-<a class="tile reveal" href="programs.html#threes"><img src="assets/photos/threes-outdoor-play.webp" alt="Three-year-olds playing outdoors" loading="lazy" width="600" height="450"><div><small>36–48 months</small><h3>Three's</h3></div></a>
-<a class="tile t-wide reveal" href="vpk.html"><img src="assets/photos/vpk-classroom.webp" alt="VPK classroom" loading="lazy" width="600" height="450"><div><small>Age 4 by September 1</small><h3>State-funded VPK + wraparound</h3><p>Florida's state-funded VPK hours, plus full-day wraparound care for $800 per 4 weeks.</p></div></a>
+<a class="tile tilt t-big reveal" href="programs.html#toddlers"><img src="assets/photos/toddlers-sensory-table.webp" alt="Toddlers exploring a sensory table" loading="lazy" width="600" height="450"><div><small>12–24 months</small><h3>Toddlers</h3><p>Sensory play, first words, gentle routines.</p></div><i class="glare"></i></a>
+<a class="tile tilt reveal" href="programs.html#twos"><img src="assets/photos/twos-teacher-small-group.webp" alt="Teacher with a small group of two-year-olds" loading="lazy" width="600" height="450"><div><small>24–36 months</small><h3>Two's</h3></div><i class="glare"></i></a>
+<a class="tile tilt reveal" href="programs.html#threes"><img src="assets/photos/threes-outdoor-play.webp" alt="Three-year-olds playing outdoors" loading="lazy" width="600" height="450"><div><small>36–48 months</small><h3>Three's</h3></div><i class="glare"></i></a>
+<a class="tile tilt t-wide reveal" href="vpk.html"><img src="assets/photos/vpk-classroom.webp" alt="VPK classroom" loading="lazy" width="600" height="450"><div><small>Age 4 by September 1</small><h3>State-funded VPK + wraparound</h3><p>Florida's state-funded VPK hours, plus full-day wraparound care for $800 per 4 weeks.</p></div><i class="glare"></i></a>
 </div></div></section>
-
-<section class="day"><div class="wrap">
-<h2 class="reveal">A day at <span class="lum">Right Steps</span></h2>
-<p class="sub reveal">From the first hello at 7am to pickup by 6pm.</p>
-<ol class="timeline" style="--p:0">
-<li class="reveal"><time>7:00am</time><h3>Doors &amp; classes open</h3><p>Warm welcome and breakfast.</p></li>
-<li class="reveal"><time>Morning</time><h3>Learning circles</h3><p>Letters, numbers, stories and songs.</p></li>
-<li class="reveal"><time>Late morning</time><h3>Outdoor play</h3><p>Climbing, running and fresh air on our playground.</p></li>
-<li class="reveal"><time>Midday</time><h3>Lunch &amp; rest</h3><p>Lunch included, then quiet rest time.</p></li>
-<li class="reveal"><time>Afternoon</time><h3>Snack &amp; discovery</h3><p>Afternoon snack, art, sensory and centers.</p></li>
-<li class="reveal"><time>6:00pm</time><h3>Pickup</h3><p>Hugs, stories about the day, see you tomorrow.</p></li>
-</ol>
-<p class="otc-note">Daily schedule wording <span class="otc">[OWNER TO CONFIRM]</span></p>
-</div></section>
 
 <section class="trust"><div class="wrap trust-grid">
 <div class="glass reveal">
 <h2>Quality you can <span class="lum">verify</span></h2>
 <p>Right Steps Academy is a Florida Gold Seal Quality Care provider and APPLE accredited. Our director, <strong>Cindy Goldberg</strong>, leads a caring team focused on safe, joyful early learning.</p>
-<div class="badges"><img src="assets/accreditation/gold-seal-quality-care.webp" alt="Florida Gold Seal Quality Care" width="120" height="120" loading="lazy"><img src="assets/accreditation/apple-accreditation.webp" alt="APPLE Accreditation" width="120" height="120" loading="lazy"></div>
+<div class="badges"><img class="tilt-s" src="assets/accreditation/gold-seal-quality-care.webp" alt="Florida Gold Seal Quality Care" width="120" height="120" loading="lazy"><img class="tilt-s" src="assets/accreditation/apple-accreditation.webp" alt="APPLE Accreditation" width="120" height="120" loading="lazy"></div>
 </div>
-<div class="photo-stack reveal"><img data-speed="0.05" src="assets/photos/front-lobby.webp" alt="Right Steps Academy front lobby" loading="lazy" width="600" height="450"><img data-speed="-0.05" src="assets/photos/building-exterior-kenwood-ln.webp" alt="Right Steps Academy building on Kenwood Ln" loading="lazy" width="600" height="450"></div>
+<div class="mask-reveal reveal"><img src="assets/photos/street-sign-kenwood-ln.webp" alt="Kenwood Ln street sign near Right Steps Academy" loading="lazy" width="600" height="450"></div>
 </div></section>
 
-<section class="cta reveal"><div class="wrap glass cta-box">
+<section class="cta"><div class="wrap glass cta-box reveal">
 <h2>Come see it <span class="lum">in person</span></h2>
 <p>Tour requests go straight to our director.</p>
-<div class="ctas"><a class="btn" href="enroll.html">Schedule a tour</a><a class="btn ghost" href="mailto:director@rightstepsacademy.com">director@rightstepsacademy.com</a></div>
+<div class="ctas"><a class="btn magnetic" href="enroll.html"><span>Schedule a tour</span></a><a class="btn ghost magnetic" href="mailto:director@rightstepsacademy.com"><span>director@rightstepsacademy.com</span></a></div>
 </div></section>
 </main>
 <footer class="site-footer"><div class="wrap">
