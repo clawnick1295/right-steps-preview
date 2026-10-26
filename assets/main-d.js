@@ -12,10 +12,14 @@ function count(el){const to=+el.dataset.to,comma=el.dataset.comma;if(rm){return}
 // reveals
 const rv=$$('.reveal');
 if(rm||!('IntersectionObserver'in window))rv.forEach(e=>e.classList.add('in'));
-else{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');$$('.count',e.target).forEach(count);io.unobserve(e.target)}}),{threshold:.15});rv.forEach(e=>io.observe(e))}
+else{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');$$('.count',e.target).forEach(count);io.unobserve(e.target)}}),{threshold:0,rootMargin:"0px 0px -12% 0px"});rv.forEach(e=>io.observe(e))}
 // owl
 const owl=$('.owl'),lines=['Hoo! Hi there!','Come take a tour!','Gold Seal quality!','Breakfast, lunch & snack!','See you at 7am!'];let li=0,to;
 owl&&owl.addEventListener('click',()=>{owl.querySelector('.bubble').textContent=lines[li++%lines.length];owl.classList.remove('hop');void owl.offsetWidth;owl.classList.add('hop','talk');clearTimeout(to);to=setTimeout(()=>owl.classList.remove("talk"),2200);rm||burst()});
+// tuition toggle
+document.querySelectorAll('.tu-toggle button').forEach(b=>b.addEventListener('click',()=>{const k=b.dataset.plan;
+document.querySelectorAll('.tu-toggle button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+document.querySelectorAll('.price').forEach(c=>c.classList.toggle('is-on',c.dataset.plan===k))}));
 if(rm)return;
 // pointer state
 let mx=innerWidth/2,my=innerHeight/2,cx=mx,cy=my;
